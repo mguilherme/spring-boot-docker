@@ -4,3 +4,4 @@
 - Run docker container: `docker run -d mguilherme/spring-boot-docker -p 8080:8080`, this will retrieve the **Container ID**
 - Check Container ID: `docker ps -a` and search for **mguilherme/spring-boot-docker** image
 - Check container IP: `docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <CONTAINER_ID>`
+- Go to **IP:8080/** and you should see a list of books in json format
